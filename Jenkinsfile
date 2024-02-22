@@ -22,7 +22,7 @@ stage('Test') {
                 echo'Deploy App'
             }
         }
-        post{
+      stage('post'){
 
 Always{
 emailext body: 'Summary', subject: 'Pipeline Status', to: 'ptejaswini28@gmail.com'
